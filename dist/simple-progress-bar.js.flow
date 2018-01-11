@@ -1,0 +1,32 @@
+// @flow
+
+import readline from "readline";
+declare class Class0 extends stream$Stream {
+
+  _write(chunk: Buffer | string, encoding: string, callback: (error: ?Error, data?: Buffer | string) => void): boolean;
+  constructor(options?: {decodeString?: boolean, highWaterMark?: number, objectMode?: boolean}): void;
+  cork(): void;
+  end(chunkOrEncodingOrCallback?: Buffer | string | Function, encodingOrCallback?: string | Function, callback?: Function): void;
+  setDefaultEncoding(encoding: string): boolean;
+  uncork(): void;
+  write(chunk: Buffer | string, encodingOrCallback?: string | Function, callback?: Function): boolean;
+}
+declare class Class1 extends net$Socket {
+
+  columns: number;
+  isTTY: true;
+  rows: number;
+}
+declare export default class {
+
+  _progress: number;
+  char: string;
+  columns: number;
+  pad: string;
+  get progress(): mixed /* UNEXPECTED TYPE: ExistsT */set progress(value: number): void;
+  stdout: mixed /* UNEXPECTED TYPE: ExistsT */;
+  constructor(progress?: number, columns?: number, char?: string, pad?: string, stdout?: mixed /* UNEXPECTED TYPE: ExistsT */): void;
+  earse(): default;
+  render(): default;
+}
+

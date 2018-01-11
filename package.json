@@ -1,0 +1,52 @@
+{
+  "name": "simple-progress-bar",
+  "version": "0.0.1",
+  "description": "TUI ProgressBar",
+  "main": "dist/simple-progress-bar.js",
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
+  "scripts": {
+    "start": "yarn build && node dist/simple-progress-bar.js",
+    "test": "jest",
+    "test:type": "flow",
+    "test:coverage": "jest --coverage",
+    "build": "cross-env NODE_ENV=development yarn rollup -c",
+    "build:production": "cross-env NODE_ENV=production yarn rollup -c",
+    "build:type": "flow gen-flow-files lib/index.js > dist/simple-progress-bar.js.flow"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HairyRabbit/simple-progress-bar.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HairyRabbit/simple-progress-bar/issues"
+  },
+  "homepage": "https://github.com/HairyRabbit/simple-progress-bar#readme",
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.36",
+    "@babel/plugin-proposal-class-properties": "^7.0.0-beta.36",
+    "@babel/plugin-proposal-decorators": "^7.0.0-beta.36",
+    "@babel/plugin-proposal-export-default-from": "^7.0.0-beta.36",
+    "@babel/plugin-proposal-export-namespace-from": "^7.0.0-beta.36",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.36",
+    "@babel/plugin-proposal-throw-expressions": "^7.0.0-beta.36",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0-beta.36",
+    "@babel/preset-env": "^7.0.0-beta.36",
+    "@babel/preset-flow": "^7.0.0-beta.36",
+    "@babel/preset-react": "^7.0.0-beta.36",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^22.0.4",
+    "jest": "^22.0.4",
+    "rollup": "^0.53.3",
+    "rollup-plugin-babel": "^4.0.0-beta.0",
+    "rollup-plugin-commonjs": "^8.2.6",
+    "rollup-plugin-json": "^2.3.0",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "flow-bin": "^0.62.0"
+  }
+}
