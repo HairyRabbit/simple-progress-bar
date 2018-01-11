@@ -10,7 +10,7 @@ class MockWriteable {
 test('Bar instace', () => {
   const bar = new Bar()
   expect(bar.progress).toBe(0)
-  expect(bar.columns).toBe(process.stderr.columns)
+  expect(bar.columns).toBe(process.stderr.columns || 60)
 })
 
 test('default columns shoule be 60 when without stdout', () => {
